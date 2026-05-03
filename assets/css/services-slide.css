@@ -1,0 +1,89 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.services-section {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 90%;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  min-width: calc(100% / 3); /* Shows 3 cards at a time */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.image-box {
+  border: 3px solid #1a73e8;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Navigation Buttons */
+.prev-btn,
+.next-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: #1a73e8;
+}
+
+/* Responsive adjustment */
+@media (max-width: 900px) {
+  .card {
+    min-width: 50%; /* Shows 2 cards */
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    min-width: 100%; /* Shows 1 card */
+  }
+}

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+.values-section {
+  padding: 60px 20px;
+}
+
+.values-container {
+  max-width: 1500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.value-card {
+  background: #fff;
+  padding: 35px 20px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.3);
+}
+
+.icon-box {
+  width: 55px;
+  height: 55px;
+  background: #4a90e2;
+  margin: 0 auto 25px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box i {
+  font-size: 28px;
+  color: white;
+}
+
+.value-card h3 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .values-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .value-card h3 {
+    font-size: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .values-container {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    padding: 30px 15px;
+  }
+
+  .value-card h3 {
+    font-size: 26px;
+  }
+
+  .icon-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon-box i {
+    font-size: 24px;
+  }
+}

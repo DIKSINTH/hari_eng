@@ -1,0 +1,128 @@
+/* --- Features Section Core --- */
+.features-section {
+  padding: 60px 5%;
+  background-color: #ffffff;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  /* 4 columns on desktop, 2 on tablet, 1 on mobile */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* --- Feature Card Styling --- */
+.feature-card {
+  background-color: #4788c6; /* Your brand blue */
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: #ffffff;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  cursor: default;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(71, 136, 198, 0.4);
+}
+
+/* --- Icon Container --- */
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Makes the black icons white */
+}
+
+/* --- Text Styling --- */
+.feature-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+/* --- Responsive Breakpoints --- */
+
+/* Tablet View (2x2 Grid) */
+@media (max-width: 992px) {
+  .features-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .feature-card {
+    padding: 30px 15px;
+    min-height: 200px;
+  }
+}
+
+/* Mobile View (1 Column) */
+@media (max-width: 576px) {
+  .features-container {
+    grid-template-columns: 1fr;
+  }
+
+  .features-section {
+    padding: 40px 8%;
+  }
+
+  .feature-card {
+    min-height: 180px;
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+.feature-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* This filter makes black icons turn white */
+  filter: brightness(0) invert(1);
+  display: block;
+}
+/* Update the icon styling for Material Symbols */
+.feature-icon .material-symbols-outlined {
+  font-size: 50px; /* Adjust icon size here */
+  color: #ffffff; /* Set icon color to white */
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 48;
+}
+
+/* Ensure the container stays centered */
+.feature-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Keep your existing .feature-card, .features-container, etc. as they were! */

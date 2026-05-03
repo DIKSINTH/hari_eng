@@ -1,0 +1,97 @@
+.quality-policy {
+  padding: 80px 0;
+  background-color: #fdfdfd;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.policy-row {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.policy-image {
+  flex: 1;
+}
+
+.policy-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 10px 10px 0px #4a90e2; /* Creative accent border */
+}
+
+.policy-content {
+  flex: 1.2;
+}
+
+.policy-content h2 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.policy-content .highlight {
+  color: #4a90e2;
+}
+
+.policy-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.policy-points {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.point {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.point i {
+  font-size: 20px;
+  color: #4a90e2;
+  margin-top: 5px;
+}
+
+.point p {
+  margin: 0;
+  font-weight: 500;
+  color: #333;
+}
+
+/* --- Responsive Design --- */
+
+@media (max-width: 992px) {
+  .policy-row {
+    flex-direction: column; /* Stack image on top for tablets */
+    gap: 40px;
+    text-align: center;
+  }
+
+  .point {
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+@media (max-width: 576px) {
+  .policy-content h2 {
+    font-size: 28px;
+  }
+
+  .policy-image img {
+    box-shadow: 5px 5px 0px #4a90e2;
+  }
+}

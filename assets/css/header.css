@@ -1,0 +1,301 @@
+/* --- RESET --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- HEADER --- */
+.main-header {
+  background-color: #ffffff;
+  padding: 10px 5%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.hero-section {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* --- LOGO --- */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-logo {
+  height: 60px;
+  width: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.05);
+}
+
+.brand-text h1 {
+  font-size: 22px;
+  color: #4788c6;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+/* --- NAV LINKS --- */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4788c6;
+  text-shadow:
+    0 0 5px #4788c6,
+    0 0 10px #4788c6,
+    0 0 20px #4788c6,
+    0 0 40px #00eaff;
+  animation: flicker 0.8s infinite;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #00eaff,
+    #4788c6,
+    #00eaff,
+    transparent
+  );
+  background-size: 200%;
+  box-shadow:
+    0 0 10px #00eaff,
+    0 0 20px #4788c6;
+  transition: width 0.4s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  animation: electricFlow 0.6s linear infinite;
+}
+
+@keyframes electricFlow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  24%,
+  55% {
+    opacity: 0.4;
+  }
+}
+
+/* --- MOBILE NAV --- */
+#nav-check {
+  display: none;
+}
+
+.nav-toggler {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .nav-toggler {
+    display: block;
+  }
+
+  .nav-toggler span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 5px;
+    transition: 0.3s;
+    border-radius: 3px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-links li {
+    width: 100%;
+    border-top: 1px solid #f8f9fa;
+  }
+
+  .nav-links a {
+    padding: 18px;
+    display: block;
+    text-align: center;
+  }
+
+  #nav-check:checked ~ .nav-links {
+    max-height: 500px;
+    padding-bottom: 10px;
+  }
+}
+
+/* --- FIXED CONTACT --- */
+.fixed-contact-container {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.whatsapp-fixed,
+.contact-pill-fixed {
+  pointer-events: auto;
+}
+
+.whatsapp-fixed img {
+  width: 60px;
+  height: 60px;
+}
+
+.contact-pill-fixed {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 6px 6px 6px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.phone-fixed {
+  background: #4788c6;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* --- MOBILE FIX --- */
+@media (max-width: 768px) {
+  .fixed-contact-container {
+    bottom: 20px;
+    left: 15px;
+    right: 15px;
+  }
+
+  .contact-pill-fixed span {
+    display: none;
+  }
+
+  .contact-pill-fixed {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+/* ========================= */
+/* CUSTOM IMAGE CURSOR STYLE */
+/* ========================= */
+
+body.hide-cursor {
+  cursor: none;
+}
+
+.electric-cursor {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  background: url("../images/cursor.png") no-repeat center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  transition: transform 0.05s linear;
+  filter: drop-shadow(0 0 8px #00eaff) drop-shadow(0 0 18px #4788c6);
+}
+
+/* Glow ring */
+.electric-cursor::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 2px solid rgba(0, 234, 255, 0.4);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulseRing 1s infinite;
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
+}

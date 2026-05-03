@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  background: #f3f3f3;
+  padding: 70px 20px;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.contact-card {
+  background: #fff;
+  border: 1px solid #2d2d2d;
+  border-radius: 6px;
+  padding: 35px 25px;
+  min-height: 170px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* ICON */
+.icon {
+  width: 58px;
+  height: 58px;
+  background: #2f73d9;
+  color: #fff;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  margin-bottom: 18px;
+  transition: 0.3s ease;
+}
+
+.icon:hover {
+  background: #1f5fc7;
+  transform: scale(1.08);
+}
+
+/* TEXT */
+.contact-card p {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-container h2 {
+    font-size: 2.3rem;
+  }
+
+  .contact-card {
+    min-height: 160px;
+  }
+
+  .contact-card p {
+    font-size: 1rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 50px 15px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .contact-card {
+    padding: 28px 18px;
+    min-height: 140px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .contact-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+}

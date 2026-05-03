@@ -1,0 +1,79 @@
+/* --- Welcome Section Styling --- */
+.welcome-section {
+  padding: 80px 5%;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.welcome-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.welcome-title {
+  font-size: clamp(24px, 5vw, 42px); /* Responsive font size */
+  color: #2c3e50;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.brand-highlight {
+  color: #4788c6; /* Your brand blue */
+  position: relative;
+  display: inline-block;
+}
+
+/* Subtle fade-in animation for the brand name */
+.brand-highlight {
+  animation: fadeInColor 1.5s ease-in;
+}
+
+@keyframes fadeInColor {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sub-text-bold {
+  font-size: clamp(18px, 3vw, 24px);
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.license-number {
+  font-size: 18px;
+  color: #555;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Decorative Divider */
+.divider {
+  width: 60px;
+  height: 4px;
+  background-color: #4788c6;
+  margin: 30px auto 0;
+  border-radius: 2px;
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 50px 20px;
+  }
+
+  .welcome-title {
+    line-height: 1.3;
+  }
+
+  .license-number {
+    font-size: 16px;
+  }
+}

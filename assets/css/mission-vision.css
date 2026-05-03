@@ -1,0 +1,88 @@
+.mission-vision {
+  padding: 80px 0;
+  background-color: #f4f7f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on desktop */
+  gap: 30px;
+}
+
+.mv-card {
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-top: 5px solid #4a90e2; /* Brand Blue accent */
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.mv-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.mv-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #f4f7f9;
+  color: #4a90e2;
+  font-size: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px auto;
+}
+
+.mv-card h3 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.mv-card p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+}
+
+/* --- Any Device Responsiveness --- */
+
+@media (max-width: 768px) {
+  .mv-grid {
+    grid-template-columns: 1fr; /* Stacks vertically on tablets/phones */
+    gap: 20px;
+  }
+
+  .mv-card {
+    padding: 40px 25px;
+  }
+
+  .mission-vision {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .mv-card h3 {
+    font-size: 22px;
+  }
+
+  .mv-card p {
+    font-size: 15px;
+  }
+}

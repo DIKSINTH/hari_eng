@@ -1,0 +1,91 @@
+.message-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.message-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+}
+
+.message-container {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Form Styling */
+.form-card {
+  flex: 1;
+  background: #fff;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+  font-family: sans-serif;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  font-size: 16px;
+}
+
+.input-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #0084d1;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #006eb1;
+}
+
+/* Map Styling */
+.map-container {
+  flex: 1;
+  min-height: 450px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Responsive Logic */
+@media (max-width: 850px) {
+  .message-container {
+    flex-direction: column;
+  }
+
+  .map-container {
+    height: 350px;
+  }
+}
