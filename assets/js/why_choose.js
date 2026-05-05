@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const columnTop = column.getBoundingClientRect().top;
 
       if (columnTop < triggerBottom) {
-        // Adding a slight delay for each item to create a "wave" effect
         setTimeout(() => {
           column.classList.add("active");
         }, index * 150);
@@ -16,9 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // Run once on load
   revealOnScroll();
-
-  // Run on every scroll
   window.addEventListener("scroll", revealOnScroll);
 });

@@ -1,0 +1,130 @@
+.awards-section {
+  padding: 100px 0;
+  background: #f8fbff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.awards-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 18px;
+}
+
+.awards-title span {
+  color: #4a90e2;
+}
+
+.awards-subtitle {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 60px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* GRID */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* LANDSCAPE IMAGE FULL WIDTH */
+.wide-card {
+  grid-column: span 2;
+}
+
+.award-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-8px);
+}
+
+.award-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+#award3 {
+  object-fit: contain;
+  padding: 20px;
+}
+
+/* Portrait cards */
+.awards-grid .award-card:nth-child(1),
+.awards-grid .award-card:nth-child(2) {
+  height: 550px;
+}
+
+/* Landscape card */
+.wide-card {
+  height: 420px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .awards-title {
+    font-size: 34px;
+  }
+
+  .awards-grid .award-card:nth-child(1),
+  .awards-grid .award-card:nth-child(2) {
+    height: 420px;
+  }
+
+  .wide-card {
+    height: 320px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .awards-section {
+    padding: 70px 0;
+  }
+
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wide-card {
+    grid-column: span 1;
+  }
+
+  .awards-grid .award-card:nth-child(1),
+  .awards-grid .award-card:nth-child(2),
+  .wide-card {
+    height: auto;
+  }
+
+  .award-card img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .awards-title {
+    font-size: 28px;
+  }
+
+  .awards-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
