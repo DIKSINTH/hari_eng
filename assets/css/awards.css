@@ -34,13 +34,13 @@
 /* GRID */
 .awards-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-/* LANDSCAPE IMAGE FULL WIDTH */
+/* SAME WIDTH FOR ALL */
 .wide-card {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 
 .award-card {
@@ -62,26 +62,31 @@
   display: block;
   object-fit: cover;
 }
+
 #award3 {
   object-fit: contain;
   padding: 20px;
 }
 
-/* Portrait cards */
+/* ALL CARDS SAME HEIGHT */
 .awards-grid .award-card:nth-child(1),
-.awards-grid .award-card:nth-child(2) {
-  height: 550px;
-}
-
-/* Landscape card */
+.awards-grid .award-card:nth-child(2),
 .wide-card {
-  height: 420px;
+  height: 500px;
 }
 
 /* Tablet */
 @media (max-width: 992px) {
   .awards-title {
     font-size: 34px;
+  }
+
+  .awards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wide-card {
+    grid-column: span 2;
   }
 
   .awards-grid .award-card:nth-child(1),
