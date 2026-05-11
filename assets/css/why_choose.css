@@ -6,7 +6,7 @@
 
 .why-choose-modern {
   padding: 100px 0;
-  background: linear-gradient(135deg, #2290e3 0%, #0077ff 100%);
+  background: linear-gradient(135deg, #2290e3 0%, #508fd6 100%);
   position: relative;
   overflow: hidden;
   font-family: "Segoe UI", sans-serif;
@@ -47,7 +47,7 @@
   display: block;
   text-align: center;
   color: #ff5e7d;
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;

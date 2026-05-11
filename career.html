@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hari Engineering</title>
     <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/career.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link rel="stylesheet" href="./assets/css/about-banner.css" />
-    <link rel="stylesheet" href="./assets/css/gallery.css" />
-
-    <!-- AOS CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   </head>
   <body>
-    <header class="main-header" data-aos="fade-down">
+    <header class="main-header">
       <nav class="navbar">
         <div class="logo-container">
           <a href="index.html" class="logo-link">
@@ -47,64 +43,66 @@
       </nav>
     </header>
 
-    <section class="about-banner">
-      <div class="banner-overlay">
-        <div class="banner-content" data-aos="zoom-in">
-          <h1>Our Gallery</h1>
-        </div>
+    <section class="contact-section">
+      <!-- LEFT IMAGE -->
+      <div class="contact-image">
+        <img src="./assets/images/banner.jpeg" alt="Building" />
       </div>
-    </section>
 
-    <section class="projects-section">
-      <div class="projects-container">
-        <h2 data-aos="fade-up">Our Projects</h2>
-        <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
-          At Hari Engineering, we take pride in our portfolio of successful
-          projects across various industries. Our expertise spans across:
-        </p>
+      <!-- RIGHT CONTENT -->
+      <div class="contact-content">
+        <h2 class="contact-title">Contact</h2>
 
-        <div class="projects-grid">
-          <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-            <img src="./assets/images/lt_panel.jpeg" alt="LT Panel" />
-            <div class="project-title">LT PANEL</div>
+        <div class="contact-grid">
+          <!-- ADDRESS CARD -->
+          <div class="address-card">
+            <h3>Our Address</h3>
+
+            <p>
+              Hari Engineering <br />
+              1/139, Arockiyapuram, <br />
+              Vilacheri Main Road, <br />
+              Pasumalai PO, Madurai – 625004 <br />
+              Tamil Nadu, India
+            </p>
+
+            <div class="registration">
+              <h4>Registrations</h4>
+
+              <p><strong>GST No:</strong> 33AEKPV9573P1ZC</p>
+
+              <p><strong>Udyam No:</strong> UDYAM-TN-12-0013842</p>
+            </div>
           </div>
 
-          <div class="project-card" data-aos="fade-up" data-aos-delay="150">
-            <img src="./assets/images/cable_tray.jpeg" alt="Cable Tray" />
-            <div class="project-title">CABLE TRAY</div>
-          </div>
+          <!-- CONTACT INFO -->
+          <div class="info-box">
+            <h3>Get in Touch</h3>
 
-          <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-            <img src="./assets/images/transformer.jpeg" alt="Generator" />
-            <div class="project-title">GENERATOR & TRANSFORMER ERECTION</div>
-          </div>
+            <div class="info-item">
+              <strong>Phone:</strong><br />
+              <span>9842184075 | 0452 2371217</span>
+            </div>
 
-          <div class="project-card" data-aos="fade-up" data-aos-delay="250">
-            <img src="./assets/images/project2.jpeg" alt="Busduct" />
-            <div class="project-title">BUSDUCT</div>
-          </div>
+            <div class="info-item">
+              <strong>Email:</strong><br />
+              <span>info@hariengineering.com</span>
+            </div>
 
-          <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-            <img src="./assets/images/5.jpeg" alt="MEP Work" />
-            <div class="project-title">MEP WORK</div>
-          </div>
+            <div class="info-item">
+              <strong>Website:</strong><br />
+              <span>www.hariengineering.com</span>
+            </div>
 
-          <div class="project-card" data-aos="fade-up" data-aos-delay="350">
-            <img src="./assets/images/ug_cable.jpeg" alt="UG Cable" />
-            <div class="project-title">OH and Cable</div>
-          </div>
+            <!-- GREEN BOX -->
+            <div class="welcome-box">
+              <div class="welcome-icon">✓</div>
 
-          <div class="project-card" data-aos="fade-up" data-aos-delay="400">
-            <img
-              src="./assets/images/lightning_arrester.jpeg"
-              alt="Lighting Arrester"
-            />
-            <div class="project-title">LIGHTING ARRESTER</div>
-          </div>
-
-          <div class="project-card" data-aos="fade-up" data-aos-delay="450">
-            <img src="./assets/images/earthing.jpeg" alt="Earthing" />
-            <div class="project-title">EARTHING</div>
+              <p>
+                We welcome inquiries for industrial, infrastructure, and power
+                sector projects of all scales.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -178,18 +176,6 @@
         </p>
       </div>
     </footer>
-
-    <div class="electric-cursor"></div>
-
     <script src="./assets/js/header.js"></script>
-
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    </script>
   </body>
 </html>
