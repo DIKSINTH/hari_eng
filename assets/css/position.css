@@ -68,6 +68,14 @@
   gap: 15px;
   flex-wrap: wrap;
 }
+.job-category-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0a2d55;
+  margin: 35px 0 20px;
+  padding-left: 8px;
+  border-left: 5px solid #13a8ff;
+}
 
 .positions-count {
   background: #0a2d55;

@@ -45,19 +45,26 @@
 .slider {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
-.slides img {
+.slides {
+  width: 100%;
+}
+
+.slides img,
+.slides video {
   width: 100%;
   height: 220px;
   object-fit: cover;
   display: none;
+  border-radius: 6px;
 }
 
-.slides img.active {
+.slides img.active,
+.slides video.active {
   display: block;
 }
-
 .prev,
 .next {
   position: absolute;
