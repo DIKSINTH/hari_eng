@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hari Engineering</title>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/we_are_hiring.css" />
     <link rel="stylesheet" href="./assets/css/position.css" />
@@ -15,13 +21,11 @@
     <link rel="stylesheet" href="./assets/css/qualification.css" />
     <link rel="stylesheet" href="./assets/css/job-location.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
   </head>
+
   <body>
-    <header class="main-header">
+    <!-- HEADER -->
+    <header class="main-header" data-aos="fade-down">
       <nav class="navbar">
         <div class="logo-container">
           <a href="index.html" class="logo-link">
@@ -55,10 +59,10 @@
       </nav>
     </header>
 
+    <!-- BANNER -->
     <section class="hiring-banner">
       <div class="banner-container">
-        <!-- LEFT CONTENT -->
-        <div class="banner-content">
+        <div class="banner-content" data-aos="fade-right">
           <div class="logo-box">
             <img src="./assets/images/logo.webp" alt="Hari Engineering Logo" />
             <div>
@@ -68,7 +72,6 @@
           </div>
 
           <h1>WE ARE <span>HIRING</span></h1>
-
           <a href="#" class="join-btn">JOIN OUR GROWING TEAM</a>
 
           <p class="description">
@@ -77,22 +80,32 @@
           </p>
         </div>
 
-        <!-- RIGHT IMAGE -->
-        <div class="banner-image">
+        <div class="banner-image" data-aos="fade-left">
           <img src="./assets/images/hari_eng.PNG" alt="Engineer" />
         </div>
       </div>
     </section>
-    <!-- OPEN POSITIONS -->
+
+    <!-- POSITIONS -->
     <section class="positions-section">
       <div class="positions-container">
-        <h2 class="section-title">OPEN POSITIONS</h2>
+        <h2 class="section-title" data-aos="fade-up">OPEN POSITIONS</h2>
 
-        <!-- CATEGORY HEADING -->
-        <h3 class="job-category-heading">Electrical Design Engineer</h3>
+        <div class="job-card" data-aos="zoom-in">
+          <div class="job-left">
+            <div class="icon-box">📐</div>
+            <div class="job-info">
+              <h3>ELECTRICAL DESIGN ENGINEER</h3>
+              <p><span>Experience:</span> 2 to 5 Years</p>
+            </div>
+          </div>
+          <div class="job-right">
+            <div class="positions-count">3 <span>POSITIONS</span></div>
+            <button class="apply-btn">Apply</button>
+          </div>
+        </div>
 
-        <!-- SUPERVISOR -->
-        <div class="job-card">
+        <div class="job-card" data-aos="zoom-in">
           <div class="job-left">
             <div class="icon-box">👨‍💼</div>
             <div class="job-info">
@@ -100,15 +113,13 @@
               <p><span>Experience:</span> 3 to 10 Years</p>
             </div>
           </div>
-
           <div class="job-right">
             <div class="positions-count">5 <span>POSITIONS</span></div>
             <button class="apply-btn">Apply</button>
           </div>
         </div>
 
-        <!-- ELECTRICIAN -->
-        <div class="job-card">
+        <div class="job-card" data-aos="zoom-in" data-aos-delay="100">
           <div class="job-left">
             <div class="icon-box">⚡</div>
             <div class="job-info">
@@ -116,18 +127,28 @@
               <p><span>Experience:</span> Fresher / 1-2 Years</p>
             </div>
           </div>
-
           <div class="job-right">
             <div class="positions-count">10 <span>POSITIONS</span></div>
             <button class="apply-btn">Apply</button>
           </div>
         </div>
 
-        <!-- CATEGORY HEADING -->
-        <h3 class="job-category-heading">Office Assistant</h3>
+        <div class="job-card" data-aos="zoom-in" data-aos-delay="150">
+          <div class="job-left">
+            <div class="icon-box">💼</div>
+            <div class="job-info">
+              <h3>OFFICE ASSISTANT</h3>
+              <p><span>Experience:</span> Fresher / 1-2 Years</p>
+            </div>
+          </div>
 
-        <!-- HELPER -->
-        <div class="job-card">
+          <div class="job-right">
+            <div class="positions-count">4 <span>POSITIONS</span></div>
+            <button class="apply-btn">Apply</button>
+          </div>
+        </div>
+
+        <div class="job-card" data-aos="zoom-in" data-aos-delay="200">
           <div class="job-left">
             <div class="icon-box">🛠️</div>
             <div class="job-info">
@@ -135,7 +156,6 @@
               <p><span>Experience:</span> Fresher</p>
             </div>
           </div>
-
           <div class="job-right">
             <div class="positions-count">10 <span>POSITIONS</span></div>
             <button class="apply-btn">Apply</button>
@@ -149,12 +169,9 @@
         <!-- CARD 1 -->
         <div class="info-card">
           <div class="card-header">
-            <div class="icon-circle">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
+            <div class="icon-circle"><i class="fas fa-graduation-cap"></i></div>
             <h3>QUALIFICATION</h3>
           </div>
-
           <ul>
             <li>ITI / Diploma / B.E. (Electrical)</li>
             <li>
@@ -162,16 +179,12 @@
             </li>
           </ul>
         </div>
-
         <!-- CARD 2 -->
         <div class="info-card">
           <div class="card-header">
-            <div class="icon-circle">
-              <i class="fas fa-cogs"></i>
-            </div>
+            <div class="icon-circle"><i class="fas fa-cogs"></i></div>
             <h3>REQUIRED SKILLS</h3>
           </div>
-
           <ul>
             <li>Troubleshooting & Testing</li>
             <li>Good knowledge in electrical (for freshers)</li>
@@ -182,16 +195,12 @@
             <li>ACAD SOFTWARE advantage</li>
           </ul>
         </div>
-
         <!-- CARD 3 -->
         <div class="info-card">
           <div class="card-header">
-            <div class="icon-circle">
-              <i class="fas fa-gift"></i>
-            </div>
+            <div class="icon-circle"><i class="fas fa-gift"></i></div>
             <h3>BENEFITS</h3>
           </div>
-
           <ul>
             <li>Attractive Salary</li>
             <li>ESI & PF</li>
@@ -202,27 +211,23 @@
         </div>
       </div>
     </section>
+
+    <!-- LOCATION -->
     <section class="job-location-section">
       <div class="job-location-container">
         <!-- Left -->
         <div class="location-left">
-          <div class="location-icon">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-
+          <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
           <div class="location-text">
             <span>JOB LOCATION</span>
             <h2>ALL AROUND TAMIL NADU</h2>
           </div>
         </div>
-
         <!-- Center -->
         <div class="divider"></div>
-
         <!-- Right -->
         <div class="location-right">
           <img src="./assets/images/logo.webp" alt="Hari Engineering" />
-
           <div class="company-address">
             <h3>HARI ENGINEERING</h3>
             <p>
@@ -234,13 +239,14 @@
         </div>
       </div>
     </section>
+
+    <!-- APPLY NOW -->
     <section class="apply-now-section">
       <div class="apply-now-container">
         <!-- Left -->
         <div class="apply-left">
           <h2>APPLY NOW! <span>»</span></h2>
         </div>
-
         <!-- Right -->
         <div class="apply-right">
           <div class="contact-item">
@@ -250,7 +256,6 @@
               <p>info@hariengineering.com</p>
             </div>
           </div>
-
           <div class="contact-item">
             <i class="fas fa-phone-alt"></i>
             <div>
@@ -258,7 +263,6 @@
               <p>+91 99941 86406</p>
             </div>
           </div>
-
           <div class="contact-item">
             <i class="fas fa-globe"></i>
             <div>
@@ -270,6 +274,7 @@
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="main-footer" data-aos="fade-up">
       <div class="footer-container">
         <div class="footer-col brand-info">
@@ -282,7 +287,7 @@
           <p class="brand-description">
             We are the leading manufacturer, supplier of Control Panel. This
             product is ideal for a wide number of machine and industrial plants
-            to control and monitor the operations... <a href="#">Read more</a>
+            to control and monitor the operations.
           </p>
         </div>
 
@@ -308,10 +313,10 @@
             </li>
             <li>
               <i class="fa-solid fa-location-dot"></i>
-              <span>
-                No.1/139, Arokiyapuram, Vilacheri Main Road, Pasumalai PO.
-                Madurai - 625 004
-              </span>
+              <span
+                >No.1/139, Arokiyapuram, Vilacheri Main Road, Pasumalai PO.
+                Madurai - 625 004</span
+              >
             </li>
             <li>
               <i class="fa-solid fa-envelope"></i>
@@ -338,8 +343,20 @@
         </p>
       </div>
     </footer>
+    <div class="electric-cursor"></div>
+
     <script src="./assets/js/position.js"></script>
+    <script src="./assets/js/header.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
     <script>
+      AOS.init({
+        duration: 1200,
+        once: true,
+      });
+
       // Join button popup
       document
         .querySelector(".join-btn")
@@ -353,7 +370,13 @@
 
       applyBtns.forEach((btn, index) => {
         btn.addEventListener("click", () => {
-          const roles = ["Supervisor", "Electrician", "Helper"];
+          const roles = [
+            "Electrical Design Engineer",
+            "Supervisor",
+            "Electrician",
+            "Office Assistant",
+            "Helper",
+          ];
           const phone = "919994186406";
 
           const message = `Hello Hari Engineering, I am interested in applying for ${roles[index]} position. Please share more details.`;
